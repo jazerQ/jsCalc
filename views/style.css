@@ -1,0 +1,17 @@
+.main{
+	text-align: center;
+}
+.base {
+	display: inline-block;
+	height: 512px;
+	width: 512px;
+
+	background-color: #666666;
+	text-align: center;
+}
+body{
+	background: #669999;
+}
+button{
+	color:#65F;
+}

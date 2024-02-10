@@ -10,10 +10,11 @@ const nine = document.querySelector('.nine');
 const zero = document.querySelector('.zero');
 const arr = [zero, one, two, three, four, five, six, seven, eight, nine];
 const answer = document.querySelector('.noAnswer');
-
-export class Arifmetic {
+let first = 0;
+let whatLetter = 0
+export class Numbers {
 	write(num, answer){
-			if(answer == 'Please input values'){
+			if(answer == 'Please input values' || answer == '0'){
             	return String(num);
         	}
         	else{
@@ -23,15 +24,65 @@ export class Arifmetic {
 	doubleZero(){
 		if(answer.textContent !== '0'){
 			answer.textContent +='00'
+
 		}
 	}
 }
 
-
+export class Arifmetik {
+	plus(){
+		if (answer.textContent !== "Please input values") {
+			first = answer.textContent;
+			answer.textContent = '0'
+			whatLetter = 1
+		}
+	}
+	minus(){
+		if (answer.textContent !== "Please input values") {
+			first = answer.textContent;
+			answer.textContent = '0'
+			whatLetter = 2
+		}
+	}
+	multiply(){
+		if (answer.textContent !== "Please input values") {
+			first = answer.textContent;
+			answer.textContent = '0'
+			whatLetter = 3
+		}
+	}
+	divide(){
+		if (answer.textContent !== "Please input values") {
+			first = answer.textContent;
+			answer.textContent = '0'
+			whatLetter = 4
+		}
+	}
+	equally(){
+		if(whatLetter!==0){
+			switch(whatLetter){
+				case 1: 
+					answer.textContent = String(Number(answer.textContent)+Number(first))
+					break;
+				case 2: 
+					answer.textContent = String(Number(first)-Number(answer.textContent))
+					break;
+				case 3: 
+					answer.textContent = String(Number(answer.textContent)*Number(first))
+					break;
+				case 4: 
+					answer.textContent = String(Number(first)/Number(answer.textContent))
+					break;
+			}
+		}
+	}
+}
 export class Delete {
 	deleteAll(){
 		if(answer.textContent !== "Please input values"){
 			answer.textContent = '0';
+			whatLetter = 0
+			first = 0
 		}
 	}
 	deleteOne(){

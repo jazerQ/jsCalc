@@ -1,5 +1,3 @@
-const btn = document.getElementById('btn');
-const answer = document.querySelector('.noAnswer');
 const one = document.querySelector('.one');
 const two = document.querySelector('.two');
 const three = document.querySelector('.three');
@@ -10,26 +8,38 @@ const seven = document.querySelector('.seven');
 const eight = document.querySelector('.eight');
 const nine = document.querySelector('.nine');
 const zero = document.querySelector('.zero');
+const arr = [zero, one, two, three, four, five, six, seven, eight, nine];
 const doubleZero = document.querySelector('.doubleZero');
 const deleteOne = document.querySelector('.deleteOne');
 const deleteAll = document.querySelector('.deleteAll');
-import { Arifmetic, Delete } from './classes.js'
-const arifm = new Arifmetic;
+const answer = document.querySelector('.noAnswer');
+const plus = document.querySelector('.plus');
+const minus = document.querySelector('.minus');
+const multiply = document.querySelector('.multiply');
+const divide = document.querySelector('.divide');
+const equally = document.querySelector('.equally')
+import { Numbers, Delete, Arifmetik } from './classes.js'
+const arifm = new Numbers;
 const deleting = new Delete;
-const arr = [zero, one, two, three, four, five, six, seven, eight, nine];
+const letters = new Arifmetik
 
 deleteOne.addEventListener('click', deleting.deleteOne)
 
 deleteAll.addEventListener('click', deleting.deleteAll)
 
 for(let i = 0; i< arr.length;i++){
-	arr[i].addEventListener('click', (e) => {
+	console.log(i)
+	arr[i].addEventListener('click', () => {
 		answer.textContent = arifm.write(i, answer.textContent);
 		answer.className = "Answer";
 	})
 }
-doubleZero.addEventListener('click',() => {
-	if(answer.textContent !== '0'){
-		answer.textContent +='00'
-	}
-})
+doubleZero.addEventListener('click',arifm.doubleZero)
+
+
+plus.addEventListener('click',letters.plus);
+minus.addEventListener('click', letters.minus);
+multiply.addEventListener('click', letters.multiply);
+divide.addEventListener('click', letters.divide)
+
+equally.addEventListener('click', letters.equally)

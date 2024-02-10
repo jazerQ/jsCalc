@@ -6,7 +6,7 @@
 	height: 512px;
 	width: 400px;
 	margin: 18px;
-	background-color: #666666;
+	background-color: #3b4455;
 	text-align: center;
 	border-radius: 7px;
 }
@@ -14,8 +14,18 @@ body{
 	background: #F6F6FF;
 }
 button{
-	color:#65F;
+	font-size: 24px;
+	font-family: sans-serif;
+	font-weight: normal;
+	color: #20B2AA;
+	display: inline-block;
+	width: 58px;
+	height: 58px;
+	background-color: #3b4455;
+	border-radius: 7px;
+	box-shadow: -2px -3px 10px 0px rgba(255, 245, 255, 0.6)
 }
+
 p{
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 40px;
@@ -32,4 +42,17 @@ p{
 	text-align: right;
 	margin: 2vw;
 	margin-top: 4vw;
+}
+.String{
+	display: flex;
+	flex-flow: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	grid-gap: 2vw;
+	margin: 1vw;
+
+}
+.equally{
+	height: 58px;
+	width: 143px;
 }

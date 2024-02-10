@@ -16,3 +16,14 @@ body{
 button{
 	color:#65F;
 }
+p{
+	font-family: 'Quicksand', sans-serif;
+	color:#F6F6F6;
+	font-weight: 40px;
+	font-size: 32px;
+}
+.noAnswer{
+	text-align: right;
+	margin: 2vw;
+	margin-top: 4vw;
+}

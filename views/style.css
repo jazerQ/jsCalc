@@ -19,11 +19,17 @@ button{
 p{
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 40px;
-	font-size: 32px;
+	font-size: 36px;
 }
 .noAnswer{
 	text-align: right;
 	color: #99958C;
+	margin: 2vw;
+	margin-top: 4vw;
+}
+.Answer{
+	color: #F6F6F6;
+	text-align: right;
 	margin: 2vw;
 	margin-top: 4vw;
 }

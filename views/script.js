@@ -10,9 +10,10 @@ const seven = document.querySelector('.seven');
 const eight = document.querySelector('.eight');
 const nine = document.querySelector('.nine');
 const zero = document.querySelector('.zero');
+const doubleZero = document.querySelector('.doubleZero');
 const deleteOne = document.querySelector('.deleteOne');
 const deleteAll = document.querySelector('.deleteAll');
-const arr = [zero,one,two,three,four,five,six,seven,eight,nine]
+const arr = [zero, one, two, three, four, five, six, seven, eight, nine];
 
 deleteOne.addEventListener('click', (e) => {
 	if(answer.textContent !== 'Please input values'){
@@ -43,3 +44,8 @@ for(let i = 0; i< arr.length;i++){
 		}
 	})
 }
+doubleZero.addEventListener('click',() => {
+	if(answer.textContent !== '0'){
+		answer.textContent +='00'
+	}
+})

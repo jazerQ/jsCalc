@@ -13,6 +13,9 @@
 body{
 	background: #F6F6FF;
 }
+.dark {
+	background: #141414;
+}
 button{
 	font-size: 24px;
 	font-family: sans-serif;
@@ -55,4 +58,52 @@ p{
 .equally{
 	height: 58px;
 	width: 143px;
+}
+.one{
+	color: #F6F6F6;
+}
+.two{
+	color: #F6F6F6;
+}
+.three{
+	color: #F6F6F6;
+}
+.four{
+	color: #F6F6F6;
+}
+.five{
+	color: #F6F6F6;
+}
+.six{
+	color: #F6F6F6;
+}
+.seven{
+	color: #F6F6F6;
+}
+.eight{
+	color: #F6F6F6;
+}
+.nine{
+	color: #F6F6F6;
+}
+.zero{
+	color:#F6F6F6;
+}
+.doubleZero{
+	color: #F6F6F6;
+}
+.night-day{
+	display: block;
+	margin: 3vw;
+	text-align: right;
+}
+.night{
+	font-size: 18px;
+	font-weight: normal;
+	color: #F6f6f1;
+	display: inline-block;
+	width: 128px;
+	height: 58px;
+	background-color: #3b4455;
+	border-radius: 7px;
 }

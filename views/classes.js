@@ -27,6 +27,11 @@ export class Numbers {
 
 		}
 	}
+	dot(){
+		if(!answer.textContent.includes('.')){
+			answer.textContent+='.'
+		}
+	}
 }
 
 export class Arifmetik {

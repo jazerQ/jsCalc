@@ -17,12 +17,24 @@ const plus = document.querySelector('.plus');
 const minus = document.querySelector('.minus');
 const multiply = document.querySelector('.multiply');
 const divide = document.querySelector('.divide');
-const equally = document.querySelector('.equally')
+const equally = document.querySelector('.equally');
+const dot = document.querySelector('.dot');
+const night = document.querySelector('.night');
+const body = document.querySelector('body')
 import { Numbers, Delete, Arifmetik } from './classes.js'
 const arifm = new Numbers;
 const deleting = new Delete;
 const letters = new Arifmetik
-
+night.addEventListener('click', () => {
+	if(body.className != 'dark'){
+		body.className = 'dark'
+		night.textContent = "Normal Mod" 
+	}
+	else{
+		body.className = ''
+		night.textContent = "Night Mod" 
+	}
+})
 deleteOne.addEventListener('click', deleting.deleteOne)
 
 deleteAll.addEventListener('click', deleting.deleteAll)
@@ -35,7 +47,7 @@ for(let i = 0; i< arr.length;i++){
 	})
 }
 doubleZero.addEventListener('click',arifm.doubleZero)
-
+dot.addEventListener('click',arifm.dot)
 
 plus.addEventListener('click',letters.plus);
 minus.addEventListener('click', letters.minus);
